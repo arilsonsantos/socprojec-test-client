@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.util.Scanner;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.PropertyException;
 
 import br.client.IExameService;
 import br.client.MensagemRequisicaoNode;
@@ -15,7 +16,7 @@ import br.com.orion.socproject.utils.XmlUtils;
 
 public class ExameWsClient {
 
-	public static void main(String[] args) throws MalformedURLException, JAXBException {
+	public static void main(String[] args) throws MalformedURLException, PropertyException, JAXBException {
 		@SuppressWarnings("resource")
 		Scanner codigoTuss = new Scanner(System.in);
 

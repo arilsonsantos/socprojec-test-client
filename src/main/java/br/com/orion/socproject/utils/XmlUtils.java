@@ -10,6 +10,7 @@ import javax.xml.bind.PropertyException;
 public final class XmlUtils {
 
 	public static String objectToXml(Object obj, Class<?> clazz) throws JAXBException, PropertyException {
+		
 		JAXBContext jaxbContext = JAXBContext.newInstance(clazz);
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
